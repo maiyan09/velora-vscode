@@ -88,7 +88,24 @@ const fontPresets: FontPreset[] = [
     size: 14,
     ligatures: false,
     lineHeight: 22
-  }
+  },
+  {
+    label: 'Velora Pangolin — Soft Handwriting',
+    description: 'Rounded, playful handwriting style',
+    family: "'Pangolin', Consolas, monospace",
+    size: 19,
+    ligatures: false,
+    lineHeight: 30
+  },
+  {
+    label: 'Velora Patrick — Natural Handwriting',
+    description: 'Clean and natural handwritten style',
+    family: "'Patrick Hand', Consolas, monospace",
+    size: 20,
+    ligatures: false,
+    lineHeight: 31
+  },
+
 ];
 
 const fontKeys: FontSetting[] = [

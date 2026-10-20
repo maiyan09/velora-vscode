@@ -1,15 +1,18 @@
 {
-  "name": "velora",
+  "name": "velora-studio",
   "displayName": "Velora",
   "description": "A minimal VS Code experience with elegant themes and productivity tools",
   "version": "0.0.1",
+  "icon": "media/velora-logo.png",
+  "publisher": "maiyan09",
+  "vscode:prepublish": "npm run compile",
   "engines": {
     "vscode": "^1.140.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   
   
@@ -45,6 +48,26 @@
         "command": "velora.selectTheme",
         "title": "Select Theme",
         "category": "Velora"
+      },
+      {
+        "command": "velora.openControlCenter",
+        "title": "Velora: Open Control Center",
+        "category": "Velora"
+      },
+      {
+        "command": "velora.openWelcome",
+        "title": "Velora: Open Welcome Screen",
+        "category": "Velora"
+      },
+      {
+        "command": "velora.resetOnboarding",
+        "title": "Velora: Reset Onboarding",
+        "category": "Velora"
+      },
+      {
+        "command": "velora.toggleFocusMode",
+        "title": "Velora: Toggle Focus Mode",
+        "category": "Velora"
       }
     ],
     "themes": [
@@ -60,7 +83,14 @@
         "uiTheme": "vs",
         "path": "./themes/velora-light-color-theme.json"
       }
-    ]
+    ],
+    "iconThemes": [
+        {
+          "id": "velora-file-icons",
+          "label": "Velora File Icons",
+          "path": "./icons/velora-icon-theme.json"
+        }
+      ]
   },
 
   "scripts": {

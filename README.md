@@ -1,71 +1,57 @@
-# velora README
+# Velora ✦
 
-This is the README for your extension "velora". After writing up a brief description, we recommend including the following sections.
+**A calmer, more personal VS Code experience.**
+
+Velora brings together elegant color themes, minimalist file icons, typography presets, and distraction-free coding tools in one extension.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Velora Dark & Light
+Two carefully designed color themes with soft, balanced colors for comfortable coding.
 
-For example if there is an image subfolder under your extension project workspace:
+### Minimalist File Icons
+Custom SVG icons for popular programming languages and project files.
 
-\!\[feature X\]\(images/feature-x.png\)
+### Typography Presets
+Switch between editor font presets using the Command Palette. Some fonts may require installation on your computer.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Focus Mode
+Enter or exit VS Code's built-in Zen Mode with one command.
 
-## Requirements
+### Appearance Control Center
+Manage your color theme, editor typography, file icons, and Focus Mode from a single interface.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Welcome & Onboarding
+A first-run welcome screen helps new users personalize their workspace.
 
-## Extension Settings
+## Getting Started
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Install Velora from the VS Code Marketplace or a VSIX package.
+2. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux).
+3. Run `Velora: Open Welcome Screen` or `Velora: Open Control Center`.
+4. Choose your preferred theme, file icons, and editor font.
 
-For example:
+## Available Commands
 
-This extension contributes the following settings:
+| Command | Purpose |
+|---|---|
+| Velora: Open Control Center | Open appearance settings |
+| Velora: Open Welcome Screen | Open onboarding |
+| Velora: Select Font Preset | Choose a font |
+| Velora: Toggle Focus Mode | Toggle Zen Mode |
+| Velora: Reset Onboarding | Reset the first-run flag |
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Notes
 
-## Known Issues
+- Velora font presets configure VS Code editor settings.
+- Third-party fonts must be installed separately unless explicitly provided through a supported setup process.
+- Focus Mode uses VS Code's built-in Zen Mode.
+- Velora does not require an online account.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Feedback
 
-## Release Notes
+Found a bug or have a feature suggestion? Open an issue in the project's GitHub repository.
 
-Users appreciate release notes as you update your extension.
+## License
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+See the `LICENSE` file for licensing information.

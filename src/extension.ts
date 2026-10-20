@@ -3,6 +3,12 @@ import * as vscode from 'vscode';
 
 import { registerTypographyCommands } from './features/typography';
 import { registerThemeCommands } from './features/themeSwitcher';
+import { registerFocusModeCommands } from './features/focusMode';
+import { registerControlCenter } from './features/controlCenter';
+import {
+    registerWelcomeScreen,
+    showWelcomeOnFirstRun
+} from './features/welcomeScreen';
 
 export function activate(
   context: vscode.ExtensionContext
@@ -25,6 +31,13 @@ export function activate(
 
   // Register theme switching features
   registerThemeCommands(context);
+  registerFocusModeCommands(context);
+  registerControlCenter(context);
+  registerWelcomeScreen(context);
+
+  void showWelcomeOnFirstRun(context).catch(error => {
+      console.error('Velora welcome screen failed:', error);
+  });
 
   console.log('Velora commands registered successfully!');
 }

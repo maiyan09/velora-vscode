@@ -1,5 +1,12 @@
-out
-dist
-node_modules
+node_modules/
+out/
+dist/
 .vscode-test/
+font-development/
+venv/
+.venv/
+.env
+.env.*
 *.vsix
+*.log
+font-development/
