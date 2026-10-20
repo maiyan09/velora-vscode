@@ -6,6 +6,14 @@
   "icon": "media/velora-logo.png",
   "publisher": "maiyan09",
   "vscode:prepublish": "npm run compile",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maiyan09/velora-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maiyan09/velora-vscode/issues"
+  },
+  "homepage": "https://github.com/maiyan09/velora-vscode#readme",
   "engines": {
     "vscode": "^1.140.0"
   },
