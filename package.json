@@ -2,7 +2,7 @@
   "name": "velora-studio",
   "displayName": "Velora",
   "description": "A minimal VS Code experience with elegant themes and productivity tools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "media/velora-logo.png",
   "publisher": "maiyan09",
   "vscode:prepublish": "npm run compile",
@@ -75,6 +75,11 @@
       {
         "command": "velora.toggleFocusMode",
         "title": "Velora: Toggle Focus Mode",
+        "category": "Velora"
+      },
+      {
+        "command": "velora.openTextColorStudio",
+        "title": "Velora: Open Text Color Studio",
         "category": "Velora"
       }
     ],

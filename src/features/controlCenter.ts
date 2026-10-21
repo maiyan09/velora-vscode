@@ -61,7 +61,13 @@ export function registerControlCenter(
                                     'velora.toggleFocusMode'
                                 );
                                 break;
-
+                            case 'openTextColorStudio': 
+                                if (message.command === 'openTextColorStudio') {
+                                    await vscode.commands.executeCommand(
+                                        'velora.openTextColorStudio'
+                                );
+                                return;
+                            }
                             default:
                                 return;
                         }
@@ -292,6 +298,10 @@ function getControlCenterHtml(
                     </div>
                 </button>
 
+                <button id="openTextColorStudio">
+                    🎨 Open Text Color Studio
+                </button>
+
                 <button class="card" data-command="light">
                     <div class="card-icon">☀</div>
                     <div class="card-title">Velora Light</div>
@@ -354,6 +364,12 @@ function getControlCenterHtml(
 
     <script nonce="${nonce}">
         const vscode = acquireVsCodeApi();
+
+        document.getElementById('openTextColorStudio').addEventListener('click', () => {
+            vscode.postMessage({
+                command: 'openTextColorStudio'
+            });
+        });
 
         document.querySelectorAll('[data-command]')
             .forEach(button => {

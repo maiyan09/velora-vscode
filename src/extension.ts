@@ -9,6 +9,7 @@ import {
     registerWelcomeScreen,
     showWelcomeOnFirstRun
 } from './features/welcomeScreen';
+import { registerTextColorStudio } from './features/textColorStudio';
 
 export function activate(
   context: vscode.ExtensionContext
@@ -34,6 +35,7 @@ export function activate(
   registerFocusModeCommands(context);
   registerControlCenter(context);
   registerWelcomeScreen(context);
+  registerTextColorStudio(context);
 
   void showWelcomeOnFirstRun(context).catch(error => {
       console.error('Velora welcome screen failed:', error);
