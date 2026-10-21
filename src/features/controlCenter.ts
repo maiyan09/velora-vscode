@@ -298,7 +298,7 @@ function getControlCenterHtml(
                     </div>
                 </button>
 
-                <button id="openTextColorStudio">
+                <button id="openTextColorStudio" class="card" data-command="dark">
                     🎨 Open Text Color Studio
                 </button>
 
